@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+        <!-- ldap installer Form View -->
+        <record model="ir.ui.view" id="view_ldap_installer_form">
+            <field name="name">ldap.installer.form</field>
+            <field name="model">res.company.ldap</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='ldap_tls']" position="after">
+                  <field name="ldap_protocol"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
